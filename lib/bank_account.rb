@@ -12,15 +12,15 @@ class BankAccount
 
 
   def deposit(amount)
-    self.balance += amount
+    @balance += amount
   end
 
   def display_balance
-    "Your Balance is $#{self.balance}."
+    "Your Balance is $#{@balance}."
   end
 
   def close_account
-    self.status = "closed"
+    @status = "closed"
   end
 
   def valid?
